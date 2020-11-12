@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:padding="10dp"
+    android:background="@android:color/white"
+
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/notification_image"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/notification_image"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_toStartOf="@id/notification_post"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/notification_image"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@id/notification_post">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/notification_username"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:id="@+id/notification_text"
+
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+
+        android:id="@+id/notification_post"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

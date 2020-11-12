@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+
+        android:scaleType="fitXY"
+        android:src="@mipmap/name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+
+        android:hint="USERNAME"
+        android:id="@+id/txt_username"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="NAME"
+        android:id="@+id/txt_name"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="EMAIL"
+        android:id="@+id/txt_email"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="PASSWORD"
+        android:id="@+id/txt_password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_bg"
+        android:padding="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="REGISTER"
+        android:id="@+id/btn_register2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ALREADY A USER?LOGIN"
+        android:id="@+id/goToLogin"
+        android:padding="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/comment_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_recycle"
+        android:layout_below="@id/comment_tool_bar"
+        android:layout_marginTop="3dp"
+        android:layout_above="@+id/btm"
+        android:layout_marginBottom="3dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/cmt_image_profile"
+            android:layout_centerVertical="true"
+            android:src="@drawable/instagram"
+            />
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_bg"
+            android:hint="ADD A COMMENT...      "
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="POST"
+            android:layout_weight="7"
+            android:id="@+id/post_comment"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_bright"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>

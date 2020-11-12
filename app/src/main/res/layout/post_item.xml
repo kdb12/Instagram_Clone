@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/myll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:src="@mipmap/instalogo"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/username_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="KDB101"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+
+        android:src="@drawable/ic_more" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mcl"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/myll">
+
+        <ImageView
+            android:id="@+id/image_post"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/black"
+            app:layout_constraintDimensionRatio="1:1"
+            android:src="@drawable/instagram"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mcl"
+        android:id="@+id/myrl"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/like"
+            android:src="@drawable/ic_like"
+            android:layout_margin="5dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/comment"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_comment"
+            android:layout_toEndOf="@id/like"
+            android:layout_toRightOf="@id/like" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/save"
+            android:src="@drawable/ic_save"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/myrl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_of_likes"
+            android:text="230 likes"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_author"
+            android:text="KRISHNA BHUTADA"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <com.hendraanggrian.appcompat.widget.SocialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description_post"
+            android:layout_marginStart="10dp"
+            android:text="this is my first post"
+            android:layout_marginLeft="3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_of_comments"
+            android:text="10 comments"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragments.NotificationFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/notification_toolbar"
+        android:background="?android:attr/windowBackground"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="NOTIFICATIONS"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp" />
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_toolbar"
+
+        android:id="@+id/notification_recycler"
+
+        />
+
+
+
+</RelativeLayout>
