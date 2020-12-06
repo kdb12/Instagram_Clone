@@ -73,9 +73,10 @@ public class ChangePasswordDialogFragment extends DialogFragment
 
                                             dismiss();
                                         } else {
-                                            FirebaseDatabase.getInstance().getReference().child("USERS").child(user.getUid()).child("password").setValue(newP);
-                                            Toast.makeText(getContext(), "Password Successfully Modified", Toast.LENGTH_SHORT).show();
-                                            dismiss();
+                                            FirebaseDatabase.getInstance().getReference().child("USERS").child(user.getUid()).child("password").setValue(newP.getText().toString());
+
+
+
                                         }
                                     }
                                 });

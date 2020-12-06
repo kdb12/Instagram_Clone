@@ -127,6 +127,7 @@ public class ProfileFragment extends Fragment {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
                 if(item.getItemId() == R.id.logout)
                 {
                     FirebaseAuth.getInstance().signOut();
